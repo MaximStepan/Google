@@ -10,24 +10,20 @@
             
         }
         .vyhledavac {
+            margin: auto;
             text-align: center;
-            margin-top: -6vh;
             color: black;
             font-weight: bold;
-            background-color: grey;
+            background-color: rgb(81, 79, 79);
             padding: 1rem;
-            border: none;
-            border-radius: 100px;
-            text-decoration: none;  
-            max-width: fit-content;
-            margin-left: 600px;
-            
         }
         .text{
             text-align: center;
             margin-top: 20vh;
-            font-size: 5rem;
+            margin-bottom: 0rem;
+            font-size: 7rem;
             color: white;
+            font-family: Arial, Helvetica, sans-serif;
             
         }
         .pozadi{
@@ -35,6 +31,20 @@
         }
         #navbar a {
             color:white;
+            text-decoration: 0;
+        }
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+        #okno {
+            border-radius: 100px;
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 2px solid;
+            width: 500px;
+            height: 30px;
+            border-radius: 20px;
         }
 
 
@@ -53,9 +63,9 @@
 
 
 <div class="vyhledavac">
-    <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
+    <form action="https://www.google.com/advanced_search">
+        <input id="okno" type="text" name="q" placeholder="Hledejte na Googlu nebo zadejte adresu URL">
+        
     </form>
 </div>
 </body>
